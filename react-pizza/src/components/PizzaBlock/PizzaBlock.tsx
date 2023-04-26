@@ -1,6 +1,11 @@
-import React from 'react'
+import { FC } from 'react'
 
-const PizzaBlock = ({title, price}) => {
+interface PizzaBlockProps {
+  title: string
+  price: string
+}
+
+const PizzaBlock: FC<PizzaBlockProps> = ({ title, price }) => {
   return (
     <div>
       <div className="pizza-block">
